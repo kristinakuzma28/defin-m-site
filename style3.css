@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #e6d5be;
+  font-family: "Arial", sans-serif;
+  color: #5b3a1c;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+/* Стрелка */
+.arrow {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  font-size: 2.5em;
+  color: #5b3a1c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #7b4a22;
+}
+
+
+/* Заголовок */
+header {
+  text-align: center;
+  margin-top: 80px;
+}
+
+header h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+/* Люди */
+.people {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.person h2 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.person p {
+  font-size: 1.2em;
+}
+
+/* Нижний блок */
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.left {
+  text-align: left;
+  line-height: 1.6em;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Логотип */
+.logo {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 150px;
+  height: 90px;
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+/* --- АДАПТИВ ДЛЯ СТРАНИЦЫ "ПРО НАС" --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .arrow {
+    font-size: 2em;
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+
+  .people {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .person {
+    margin-bottom: 25px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .left, .right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

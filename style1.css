@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7b4a1e; /* коричневый фон */
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.catalog-box {
+  background-color: #a56e3ac5;
+  padding: 70px 150px; /* увеличил внутренние отступы */
+  border-radius: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 480px; /* фиксированная ширина, как на твоём скрине */
+}
+
+.catalog-box p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px; /* увеличил шрифт */
+  margin: 38px 0;
+  letter-spacing: 1.5px;
+}
+
+.catalog-box hr {
+  border: none;
+  border-top: 2px solid #fff;
+  margin: 48px 0;
+  width: 100%; /* линия во всю ширину блока */
+}
+
+.back-btn {
+  position: absolute;
+  left: 30px;
+  top: 8%;
+  transform: translateY(-50%);
+  font-size: 80px;
+  text-decoration: none;
+  color: #c8935f;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #ffffff;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 280px;
+  height: auto;
+}
+.no-link {
+  color: inherit; /* наследует цвет текста родителя */
+  text-decoration: none; /* убирает подчёркивание */
+}
+
+.no-link:hover {
+  color: inherit; /* чтобы при наведении не менялся цвет */
+  text-decoration: none; /* чтобы при наведении не появлялось подчёркивание */
+}
+/* --- АДАПТИВ ДЛЯ КАТАЛОГА --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .back-btn {
+    font-size: 2em;
+    margin: 20px;
+    display: inline-block;
+  }
+
+  .logo {
+    width: 80%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  .catalog-box {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .catalog-box p {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+
+  .catalog-box hr {
+    width: 70%;
+  }
+
+  a.no-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+}
