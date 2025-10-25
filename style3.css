@@ -101,51 +101,98 @@ footer {
   background-repeat: no-repeat;
   background-position: right;
 }
-/* --- АДАПТИВ ДЛЯ СТРАНИЦЫ "ПРО НАС" --- */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 15px;
+
+
+@media (max-width: 852px) {
+  /* Загальні відступи */
+  .page {
+    padding: 20px;
   }
 
+  /* Кнопка "назад" */
   .arrow {
-    font-size: 2em;
-    position: static;
-    display: block;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3.3em;
+    color: #5b3a1c;
+    text-decoration: none;
+    z-index: 10;
+  }
+
+  .arrow:hover {
+    color: #7b4a22;
+  }
+
+  /* Логотип */
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .logo img {
+    width: 130px;
+    height: auto;
+  }
+
+  /* Заголовок */
+  header {
+    margin-top: 120px;
+    text-align: center;
   }
 
   header h1 {
-    font-size: 1.3em;
-    text-align: center;
-    margin: 10px 0;
+    font-size: 1.7em;
+    line-height: 1.3em;
+    margin-bottom: 15px;
   }
 
   .subtitle {
-    text-align: center;
-    font-size: 0.9em;
-    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.4em;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
+  /* Блок з людьми */
   .people {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
   }
 
-  .person {
-    margin-bottom: 25px;
+  .person h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
   }
 
+  .person p {
+    font-size: 1em;
+  }
+
+  /* Нижній блок (footer) */
   footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.95em;
+    line-height: 1.6em;
+    margin-top: 60px;
   }
 
   .left, .right {
-    width: 100%;
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .left {
+    font-size: 14.5px;
+  }
+
+  .right p {
+    margin-top: 5px;
   }
 }

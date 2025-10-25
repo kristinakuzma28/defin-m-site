@@ -92,3 +92,19 @@ body {
   align-items: center;
   width: 400px;
 }
+
+@media (max-width: 858px) {
+  .header h1 {
+    font-size: 15px;
+    margin: 0;
+  }
+  .back-arrow{
+    width: 5px;
+  }
+
+  .logo img {
+    width: auto;
+    height: 50px;
+    left: 20px;
+  }
+}

@@ -67,43 +67,48 @@ body {
   text-decoration: none; /* чтобы при наведении не появлялось подчёркивание */
 }
 /* --- АДАПТИВ ДЛЯ КАТАЛОГА --- */
-@media (max-width: 768px) {
+@media (max-width: 858px) {
   body {
-    font-size: 16px;
-    padding: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: #7b4a1e;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
 
-  .back-btn {
-    font-size: 2em;
-    margin: 20px;
-    display: inline-block;
-  }
 
-  .logo {
-    width: 80%;
-    max-width: 200px;
-    display: block;
-    margin: 0 auto 30px;
-  }
 
   .catalog-box {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+    width: 75%; /* Адаптивна ширина */
+    height: 350px;
+    padding: 40px 20px; /* Зменшені внутрішні відступи */
+    border-radius: 15px; /* Менший радіус кута */
   }
 
   .catalog-box p {
-    font-size: 1.2em;
-    margin: 15px 0;
+    font-size: 18px; /* Зменшений розмір шрифту */
+    margin: 32px 0;
+    letter-spacing: 1px;
   }
 
   .catalog-box hr {
-    width: 70%;
+    margin: 25px 0;
+    border-top: 1px solid #fff; /* Тонша лінія */
   }
 
-  a.no-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+  .back-btn {
+    left: 20px;
+    font-size: 80px; /* Зменшений розмір кнопки */
+    top: 8%;
+  }
+
+  .logo {
+    top: 25px;
+    right: 15px;
+    width: 180px; /* Зменшений розмір логотипу */
   }
 }
